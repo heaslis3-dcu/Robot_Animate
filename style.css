@@ -1,0 +1,169 @@
+/*$size: 50px;*/
+/* SHAPES in CSS - 
+ * https://css-tricks.com/snippets/css/css-triangle/
+ * https://paulund.co.uk/how-to-create-different-shapes-in-css
+ * https://github.com/daneden/animate.css
+ * Ref Date: 07/12/2018
+ */
+/*
+body {
+  background: #222222;
+  box-shadow: inset 0 0 400px #111111;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+*/
+body {
+    background-image: url(joe-woods-739738-unsplash.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+    animation-fill-mode: backwards;
+}
+
+.robot {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;  
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+    background-color: aqua;
+}
+
+/* Head */
+.head {
+    width: 200px;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 100px 100px 0 0px;
+    margin-bottom: 10px;
+    
+}
+
+.eyes {
+    display: flex;
+}
+
+.head:hover {
+    width: 250px;
+/*    height: 200px;*/
+    transition: 1s ease-in-out;
+}
+
+.left_eye, .right_eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.left_eye {
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+/* Upper Body */
+
+.upper_body {
+    width: 290px;
+    height: 150px;
+    display: flex;
+}
+
+.left_arm,
+.right_arm {
+    width:40px;
+    height: 125px;    
+    border-radius: 100px;
+    transform: rotateY(100deg);
+
+}
+
+.left_arm {
+    margin-right: 5px;
+}
+
+.left_arm:hover {
+    width: 40px;
+    transition: 1s ease-in-out;
+    transform: rotate(100deg);
+/*    transform-origin: top left;*/
+
+}
+
+.right_arm {
+    margin-left: 5px;
+}
+
+.right_arm:hover {
+    width: 40px;
+    transition: 1s ease-in-out;
+    transform: rotate(80deg);
+/*    transform-origin: top left;*/
+
+}
+
+.torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+}
+
+.torso:hover {  
+        transition: 1s ease-in-out;
+        transform: rotateX(45deg);
+}
+
+/* Legs */
+
+.lower_body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left_leg,
+.right_leg {
+    width:40px;
+    height: 120px;    
+    border-radius: 0 0 50px 100px;
+}
+
+.left_leg {
+    margin-left: 45px;
+}
+
+.left_leg:hover {
+    transform: rotate(20deg);
+    transition: 1s ease-in-out;
+/*            transform: rotateX(45deg);*/
+}
+
+.right_leg {
+    margin-left: 30px;
+}
+.right_leg:hover {
+    transform: rotate(45deg);
+    transition: 1s ease-in-out;
+}
+
+
